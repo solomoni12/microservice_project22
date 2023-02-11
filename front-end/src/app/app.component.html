@@ -1,0 +1,45 @@
+<div class="contain">
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>supervised_user_circle</mat-icon>
+    </button>
+    <span>Project 22 Group</span>
+    <mat-nav-list>
+      <mat-list-item class="matListItemTitle">
+      <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a routerLink="products" routerLinkActive="active" class="nav-link"> Product List</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="orders" routerLinkActive="active" class="nav-link"> View Order</a>
+          </li>
+        </ul>
+        </nav>
+        <!-- <a routerLink="products" routerLinkActive="active" class="nav-link"> Product List</a>
+        <a routerLink="create-product" routerLinkActive="active" class="nav-link">Add Product</a> -->
+         <!-- <a matListItemTitle id="produ" href="#">Product List</a>
+         <a matListItemTitle id="prod" href="#">View Order</a> -->
+      </mat-list-item>
+    </mat-nav-list>
+    <span class="example-spacer"></span>
+    <!-- <button mat-raised-button color="primary" (click)="openDialog()">Add Product</button>
+    <button mat-raised-button color="primary" (click)="openNewDialog()">Place Order</button>
+    <a mat-stroked-button (click)="openDialog()" target="_blank">Link</a> -->
+  </mat-toolbar>
+  
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  
+<!-- <app-order-list></app-order-list> -->
+  <!-- <app-dialog></app-dialog> -->
+
+</div>
+<!-- <footer class="footer">
+  <div class="container">
+    <span>All Right Reserved 2023 @mwalupani</span>
+  </div>
+</footer> -->
+
+

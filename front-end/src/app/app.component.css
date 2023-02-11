@@ -1,0 +1,20 @@
+/* .contain{
+   margin: 10px;
+}  */
+/* .container{
+    margin: 0px;
+} */
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .matListItemTitle{
+    color: white;
+    margin-left: 600px;
+  }
+  #prod{
+    padding-left: 10px;
+  }
+  .cont{
+    margin-left: 20px;
+    margin-right: 20px;
+  }

@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Add Product</h1>
+<div mat-dialog-content>
+   <form [formGroup] = "productForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Product Name</mat-label>
+            <input formControlName="productName" matInput placeholder="Name">      
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Product SkuCode</mat-label>
+            <input formControlName="productSkuCode" matInput placeholder="Name">      
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Product Description</mat-label>
+            <input formControlName="productDescription" matInput placeholder="Name">      
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Product Price</mat-label>
+            <input formControlName="productPrice" matInput type="number" placeholder="Name">      
+        </mat-form-field>
+   </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProduct()">save</button>
+</div>
