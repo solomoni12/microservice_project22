@@ -62,20 +62,20 @@ constructor(private dialog: MatDialog, private productService: ProductService, p
 }
 
   ngOnInit(): void {
-    // this.getOrder();
+    this.getOrder();
   }
-  // public getOrder(): void{
+  public getOrder(): void{
 
-  //   this.productService.getOrder().subscribe(
-  //     (response: OrderElement[]) => {
-  //       this.dataSource = response;
-  //       console.log(response)
-  //     },
-  //     (error:HttpErrorResponse) => {
-  //       alert(error.message);
-  //     }
-  //   );
-  // }
+    this.productService.getOrder().subscribe(
+      (response: OrderElement[]) => {
+        this.dataSource = response;
+        console.log(response)
+      },
+      (error:HttpErrorResponse) => {
+        alert(error.message);
+      }
+    );
+  }
   /*
 public getOrder(): void{
 

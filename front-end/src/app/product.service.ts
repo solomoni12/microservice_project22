@@ -40,4 +40,11 @@ export class ProductService {
   public placeOrders(order: OrderElement){
     return this.http.post(`${this.apiServe}/api/order/all`,order);
   }
+
+  // function to get all data from order
+
+  
+  public getOrder(): Observable<OrderElement[]>{
+    return this.http.get<OrderElement[]>(`${this.apiServe}/api/order/all`);
+  }
 }

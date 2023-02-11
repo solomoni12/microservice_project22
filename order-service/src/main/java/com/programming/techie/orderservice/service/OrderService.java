@@ -73,19 +73,7 @@ public class OrderService {
     }
 
     // function to get Data from database
-
-    //  public List<OrderResponse> getAllOrder(){
-    //     List<Order> orders = orderRepository.findAll();
-
-    //     return orders.stream().map(this::mapOrderResponse).toList();
-    // }
-     
-
-    // private OrderResponse mapOrderResponse(Order order){
-    //     return OrderResponse.builder()
-    //            .accountId(order.getAccountId())
-    //            .orderLineItemsDtoList(order.getOrderLineItemsList())
-    //            .build();
-    // }
-     
+    public List<Order> getAllOrder() {
+        return orderRepository.findAll();
+    }
 }

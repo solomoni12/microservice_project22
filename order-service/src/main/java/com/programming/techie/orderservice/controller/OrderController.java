@@ -1,6 +1,9 @@
 package com.programming.techie.orderservice.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.programming.techie.orderservice.dto.OrderRequest;
+import com.programming.techie.orderservice.model.Order;
 import com.programming.techie.orderservice.service.OrderService;
 
 import lombok.RequiredArgsConstructor;
@@ -26,10 +30,10 @@ public class OrderController {
         return "Order placed successful";
     } 
   
-//    @GetMapping("/all")
-//     @ResponseStatus(HttpStatus.ACCEPTED)
-//     public List<OrderResponse> getStockOrder(){
-//        return orderService.getAllOrder();
-//     }
+   @GetMapping("/all")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public List<Order> getStockOrder(){
+       return orderService.getAllOrder();
+    }
      
 }
